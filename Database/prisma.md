@@ -28,7 +28,7 @@ model Message {
 ```
 5. Create and run the initial migration.
    `npx prisma migrate dev --name init`
-6. Explore the created database. You should see two empty models: `Author` and `Book`.\
+6. Explore the created database.
    `npx prisma studio`
 7. If you made a mistake in your `schema.prisma`, instead of running another migration, you can instead use [`db push`](https://www.prisma.io/docs/guides/migrate/prototyping-schema-db-push) to sync your database with the schema. This is useful while _prototyping_.
    `npx prisma db push`
