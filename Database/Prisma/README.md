@@ -84,7 +84,7 @@ model Message {
 1. Confirm that the database is correctly seeded with authors and books.
    `npx prisma studio`
 
-###Serve using Express
+### Serve using Express
 
 1. Install express using the CLI\ 
    `npm install express`
