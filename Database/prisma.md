@@ -1,12 +1,11 @@
 ### Initialize the Database
 
-1. Fork and clone this repo. Work in your local repository!
-2. Install the Prisma CLI.
+1. Install the Prisma CLI.
    `npm install prisma --save-dev`
-3. Initialize Prisma to use sqlite.
+1. Initialize Prisma to use sqlite.
    `npx prisma init --datasource-provider sqlite`
-4. In the generated `.env` file, set `DATABASE_URL` to `"file:<dev.db>"`.
-5. Add models to your `schema.prisma` file according to the database schema above.
+3. In the generated `.env` file, set `DATABASE_URL` to `"file:<dev.db>"`.
+4. Add models to your `schema.prisma` file according to the database schema above.
 ```schema.prisma
 // schema.prisma
 // This is your Prisma schema file,
@@ -27,11 +26,11 @@ model Message {
   message   String 
 }
 ```
-6. Create and run the initial migration.
+5. Create and run the initial migration.
    `npx prisma migrate dev --name init`
-7. Explore the created database. You should see two empty models: `Author` and `Book`.\
+6. Explore the created database. You should see two empty models: `Author` and `Book`.\
    `npx prisma studio`
-8. If you made a mistake in your `schema.prisma`, instead of running another migration, you can instead use [`db push`](https://www.prisma.io/docs/guides/migrate/prototyping-schema-db-push) to sync your database with the schema. This is useful while _prototyping_.
+7. If you made a mistake in your `schema.prisma`, instead of running another migration, you can instead use [`db push`](https://www.prisma.io/docs/guides/migrate/prototyping-schema-db-push) to sync your database with the schema. This is useful while _prototyping_.
    `npx prisma db push`
 
 ### Seed the Database
