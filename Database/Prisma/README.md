@@ -177,7 +177,8 @@ router.get('/', async (req, res, next) => {
 ###Using Faker Data
 1. install faker 
    `npm install @faker-js/faker`
-2. If you want to use data imported from faker.io use this code in your seed.js
+2. If you want to use data imported from fakerjs.dev use this code in your seed.js.
+   If you want to add your own details, checkout https://fakerjs.dev/api/
 ```js
 //seed.js
 
